@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golfer Experience Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⛳ Golfer Experience Quiz</h1>
+            <p>Answer 5 questions to discover your golf experience level</p>
+        </header>
+
+        <div id="quiz-container" class="quiz-container">
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+
+            <div id="question-container" class="question-container">
+                <!-- Questions will be inserted here by JavaScript -->
+            </div>
+
+            <div class="navigation">
+                <button id="prev-btn" class="btn btn-secondary" disabled>Previous</button>
+                <button id="next-btn" class="btn btn-primary">Next</button>
+            </div>
+        </div>
+
+        <div id="result-container" class="result-container hidden">
+            <h2>Your Golf Experience Level:</h2>
+            <div id="result-level" class="result-level"></div>
+            <div id="result-description" class="result-description"></div>
+            <button id="restart-btn" class="btn btn-primary">Take Quiz Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
